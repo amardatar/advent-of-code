@@ -14,6 +14,6 @@ def get_data(day: int):
     )
 
     with request.urlopen(req) as res:
-        data = res.read().decode('utf-8')
+        data = res.read().decode('utf-8').strip()
         Path(f'./data/{day}.txt').write_text(data)
         return data
