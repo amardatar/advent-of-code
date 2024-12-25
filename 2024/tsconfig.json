@@ -1,0 +1,18 @@
+{
+    "extends": ["@tsconfig/node23", "@tsconfig/strictest"],
+
+    "compilerOptions": {
+        "lib": ["ESNext"],
+
+        "moduleResolution": "NodeNext",
+
+        "declaration": true,
+        "sourceMap": true,
+        "incremental": true,
+
+        "rootDir": "src",
+        "outDir": "dist"
+    },
+
+    "include": ["src/**/*.ts"]
+}
